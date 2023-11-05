@@ -65,16 +65,6 @@ label {
   font-weight: bold;
 }
 
-input[type="text"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  border: 3px solid #702670;
-  border-radius: 5px;
-  font-family: Arial, sans-serif;
-}
-
 #comment_button {
   background-color: #7851a9;
   color: black;
@@ -85,7 +75,7 @@ textarea {
   cursor: pointer;
 }
 
-button:disabled {
+#comment_button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
