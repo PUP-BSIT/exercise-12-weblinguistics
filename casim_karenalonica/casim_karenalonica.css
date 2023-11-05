@@ -55,7 +55,7 @@ p {
 }
 
 #comments_list {
-  border: 5px solid #301934; 
+  list-style-type: none; 
   padding: 0px;
   margin: 0px;
 }
