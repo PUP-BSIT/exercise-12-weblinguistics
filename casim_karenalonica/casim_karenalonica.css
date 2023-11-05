@@ -54,7 +54,13 @@ p {
   font-style: italic; /* Style testimonials */
 }
 
-form {
+#comment_list {
+  border: 5px solid #301934; 
+  padding: 20px;
+  margin: 10px;
+}
+
+#comment_form {
   border: 5px solid #301934; 
   padding: 20px;
   margin: 10px;
@@ -83,11 +89,6 @@ button {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-}
-
-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
 }
 
 h2 + img {
