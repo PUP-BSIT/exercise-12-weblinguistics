@@ -1,17 +1,22 @@
-const nameInput = document.getElementById("name");
-const commentInput = document.getElementById("comment");
-const commentButton = document.getElementById("comment_button");
+document.addEventListener('DOMContentLoaded', function () {
+    const commentButton = document.getElementById('comment_button');
+    const commentText = document.getElementById('comment_text');
+    const commentsContainer = document.getElementById('comments');
 
-function checkInput() {
-    const nameValue = nameInput.value.trim();
-    const commentValue = commentInput.value.trim();
+    commentButton.addEventListener('click', function () {
+        const name = document.getElementById('name').value;
+        const comment = commentText.value;
 
-    if (nameValue !== "" && commentValue !== "") {
-        commentButton.removeAttribute("disabled");
-    } else {
-        commentButton.setAttribute("disabled", true);
-    }
-}
+        if (name && comment) {
+            const newComment = document.createElement('div');
+            newComment.className = 'comment_container';
+            newComment.innerHTML = `<strong>Name: ${name}
+						</strong><br>${comment}<br><br>`;
 
-nameInput.addEventListener("input", checkInput);
-commentInput.addEventListener("input", checkInput);
+            commentsContainer.insertBefore(newComment, commentsContainer.firstChild);
+
+            document.getElementById('name').value = '';
+            commentText.value = '';
+        }
+    });
+});
