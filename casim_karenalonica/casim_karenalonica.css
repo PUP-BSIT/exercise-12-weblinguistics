@@ -75,12 +75,6 @@ textarea {
   font-family: Arial, sans-serif;
 }
 
-#comment_form input {
-  border: 5px solid #301934; 
-  padding: 20px;
-  margin: 10px;
-}
-
 #comment_button {
   background-color: #7851a9;
   color: black;
