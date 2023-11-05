@@ -164,3 +164,24 @@ body {
     padding: 10px;
     height: 50px;
 }
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    #section2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #profile_image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .input_field {
+        width: calc(100% - 16px);
+    }
+}
