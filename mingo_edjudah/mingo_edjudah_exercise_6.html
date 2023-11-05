@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="styles.css" rel="stylesheet" type="text/css"/>
 		<title>Mingo Ed Judah Page</title>
 	</head>
@@ -95,34 +97,37 @@
 				<li><p>Goal 3: Commit and push after resolving the conflict.</p></li>
 			</ul>
 
-			<div id="comments">
-				<h3>Teammate Comments</h3>
-
+			<div id="team_comments">
+				<h3>Teammates Comments</h3>
+	
 				<p><strong>Name:</strong> Karen Alonica Casim</p>
-				<p>Good luck with your aspirations, and I hope you know 
+				<p>- Good luck with your aspirations, and I hope you know 
 					how to rest.</p>
-
-				<p><strong>Name:</strong>Diana Rose Fidel</p>
-				<p>Do everything you can to achieve your goal.</p>
-
+	
+				<p><strong>Name:</strong> Diana Rose Fidel</p>
+				<p>- Do everything you can to achieve your goal.</p>
+	
 				<p><strong>Name:</strong> James Nabayra</p>
-				<p>Your goals are too specific and I love it because you 
+				<p>- Your goals are too specific and I love it because you 
 					know every steps on how to do this properly. Thank you 
 					also for guiding us in the right path. You really are 
 					an organized person. Let's unite always, Ed!</p>
-
-				<p><strong>Name:</strong>Kazel Villamarzo</p>
-				<p>A Friend is a friend but a best friend is even better</p><br></br>
-			</div>
-			
-			<div id="comment_form">
-				<label for="name">Name:</label>
-				<input type="text" id="name" required><br></br>
-				<label for="comment">Comment:</label><br></br>
-				<textarea id="comment" required></textarea><br></br>
-				<button id="comment_button" disabled>Comment</button><br></br>
+	
+				<p><strong>Name:</strong> Kazel Villamarzo</p>
+				<p>- A Friend is a friend but a best friend is even better</p>
 			</div>
 		</div>
+			
+		<div id="comment_form">
+			<div id="form_container">
+				<label for="name">Name:</label>
+				<input type="text" id="name" class="input_field" required>
+				<label for="comment">Comment:</label>
+				<textarea id="comment" class="input_field" required></textarea>
+				<button id="comment_button" disabled>Comment</button>
+			</div>			
+			<div id="comments_container"></div>
+		</div>		
 
 		<div id="footer">
 			<p>&copy; 2023 Mingo Ed Judah. All rights reserved.</p>

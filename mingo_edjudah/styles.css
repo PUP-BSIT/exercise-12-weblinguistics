@@ -30,52 +30,58 @@ body {
     display: flex;
     align-items: center;
     padding: 30px;
-	background-color: #D6EAF8;
-}
-
-#profile_image {
-	width: 150px;
-	height: auto;
-	margin-right: 20px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-#profile_text {
-	flex: 1;
-	margin-top: 20px;
-	margin-bottom: 60px;
-}
-
-#section2, #section3, #section4, #section5, #section6 {
-	padding: 10px;
-	padding-left: 30px;
+    margin: 0 20px;
+    background-color: #D6EAF8;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
 #section2 h2 {
     font-family: 'Bahnschrift', sans-serif;
     margin-bottom: 30px;
 }
-	
-#section2 h2, #section3 h2{
-	font-family: 'Bahnschrift', sans-serif;
+
+#profile_image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
 }
 
-#section3 ul {
-	list-style: disc;
-	padding-left: 20px;
+#profile_text {
+    flex: 1;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
-#section3 ul li {
-	margin-bottom: 10px;
+#section3,
+#section4,
+#section5,
+#section6,
+#comment_form {
+    padding: 10px;
+    padding-left: 30px;
+    margin: 0 20px;
+    background-color: lightgray;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
-#section4 h2, #section5 h2, #section6 h2 {
+#section3 h2, 
+#section4 h2, 
+#section5 h2, 
+#section6 h2,
+#team_comments h3 {
     font-family: 'Bahnschrift', sans-serif;
     margin-bottom: 20px;
 }
 
-#section2 p, #section4 p, #section5 p, #section6 p {
+#section1,
+#section2,
+#section3, 
+#section4, 
+#section5,
+#section6,
+#comment_form {
     margin-bottom: 20px;
 }
 
@@ -84,15 +90,71 @@ body {
 }
 
 #section4 {
-    background-color: #F9E79F;
+    background-color: #FFCFCF;
 }
 
 #section5 {
-    background-color: pink;
+    background-color: #FFD290;
 }
 
-#section6 {
-    background-color: lightgray;
+#section6{
+    background-color: #FFFDBF;
+}
+
+#comment_form {
+    padding: 10px;
+    margin: 0 20px 20px;
+    background-color: #C1FEC3;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#form_container {
+    margin-bottom: 20px;
+}
+
+#form_container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input_field {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#form_container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#form_container button:hover {
+    background-color: #45a049;
+}
+
+.comment {
+    margin-bottom: 10px;
+}
+
+#comment_form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#comment_form button:hover {
+    background-color: #45a049;
 }
 
 #footer {
