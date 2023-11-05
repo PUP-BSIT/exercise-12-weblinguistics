@@ -1,21 +1,23 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const commentButton = document.getElementById('comment_button');
-    const commentText = document.getElementById('comment_text');
-    const commentsContainer = document.getElementById('comments');
+const nameInput = document.getElementById('name');
+        const commentInput = document.getElementById('comment');
+        const commentButton = document.getElementById('comment_button');
+        const commentsContainer = document.getElementById('comments');
 
-    commentButton.addEventListener('click', function () {
-        const name = document.getElementById('name').value;
-        const comment = commentText.value;
+        commentButton.addEventListener('click', function () {
+            const name = nameInput.value;
+            const comment = commentInput.value;
 
-        if (name && comment) {
-            const newComment = document.createElement('div');
-            newComment.className = 'comment_container';
-            newComment.innerHTML = `<strong>Name: ${name} </strong><br>${comment}<br><br>`;
+            if (name && comment) {
+                // Create a new comment element
+                const commentElement = document.createElement('div');
+                commentElement.className = 'comment';
+                commentElement.innerHTML = `<strong>${name}:</strong> ${comment}`;
 
-            commentsContainer.insertBefore(newComment, commentsContainer.firstChild);
+                // Append the new comment to the comments container
+                commentsContainer.appendChild(commentElement);
 
-            document.getElementById('name').value = '';
-            commentText.value = '';
-        }
-    });
-});
+                // Clear the input fields
+                nameInput.value = '';
+                commentInput.value = '';
+            }
+        });
