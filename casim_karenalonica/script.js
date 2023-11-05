@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const commentButton = document.getElementById('comment_button');
-    const commentText = document.getElementById('comment'); 
+    const commentText = document.getElementById('comment_text');
     const commentsContainer = document.getElementById('comments');
 
     commentButton.addEventListener('click', function () {
@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (name && comment) {
             const newComment = document.createElement('div');
             newComment.className = 'comment_container';
-            newComment.innerHTML = `<strong>Name: ${name}</strong><br>${comment}<br><br>`;
+            newComment.innerHTML = `<strong>Name: ${name}
+						</strong><br>${comment}<br><br>`;
 
             commentsContainer.insertBefore(newComment, commentsContainer.firstChild);
 
