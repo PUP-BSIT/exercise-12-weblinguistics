@@ -54,7 +54,7 @@ p {
   font-style: italic; /* Style testimonials */
 }
 
-#comment_form {
+form {
   border: 5px solid #301934; 
   padding: 20px;
   margin: 10px;
@@ -75,7 +75,7 @@ textarea {
   font-family: Arial, sans-serif;
 }
 
-#comment_button {
+button {
   background-color: #7851a9;
   color: black;
   font-weight: bold;
@@ -85,7 +85,7 @@ textarea {
   cursor: pointer;
 }
 
-#comment_button:disabled {
+button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
