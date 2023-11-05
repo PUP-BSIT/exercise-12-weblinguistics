@@ -30,7 +30,7 @@ body (min-width: 320px) and
 	     li { color:#FF00FF;
 		font-weight:700;
 		}
-		#my_goals{
+		template {
 		color:#FF007F;
 		font-weight:700;
 		background:#1F1F1F;
