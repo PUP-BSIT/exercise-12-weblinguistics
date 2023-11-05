@@ -37,6 +37,35 @@ h2 {
     width: 50%;
 }
 
+#comment_form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#input-container input,
+#input-container textarea {
+    display: block;
+    width: 300%;
+}
+
+#comment_button {
+    background-color: #008000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
 #comments_section {
     background-color: #f9f9f9;
     padding: 20px;
