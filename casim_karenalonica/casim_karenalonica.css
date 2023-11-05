@@ -85,11 +85,6 @@ button {
   cursor: pointer;
 }
 
-button:disabled {
-  background-color: #ccc; /* Gray out the button when disabled */
-  cursor: not-allowed;
-}
-
 h2 + img {
   margin: 10px;
   max-width: 100%;
