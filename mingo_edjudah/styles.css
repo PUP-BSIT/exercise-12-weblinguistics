@@ -1,0 +1,108 @@
+body {
+	font-family: 'Arial', 'Roboto', 'Comic sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+    background-color: teal;
+    font-family: 'Bahnschrift', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#section1 {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+#section1 a {
+	color: white;
+	text-decoration: none;
+	margin: 0 15px;
+	padding: 10px 15px;
+}
+	
+#section2 {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+	background-color: #D6EAF8;
+}
+
+#profile_image {
+	width: 150px;
+	height: auto;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#profile_text {
+	flex: 1;
+	margin-top: 20px;
+	margin-bottom: 60px;
+}
+
+#section2, #section3, #section4, #section5, #section6 {
+	padding: 10px;
+	padding-left: 30px;
+}
+
+#section2 h2 {
+    font-family: 'Bahnschrift', sans-serif;
+    margin-bottom: 30px;
+}
+
+#section2 p {
+    margin-bottom: 20px;
+}
+	
+#section2 h2, #section3 h2{
+	font-family: 'Bahnschrift', sans-serif;
+}
+
+#section3 ul {
+	list-style: disc;
+	padding-left: 20px;
+}
+
+#section3 ul li {
+	margin-bottom: 10px;
+}
+
+#section4 h2, #section5 h2, #section6 h2 {
+    font-family: 'Bahnschrift', sans-serif;
+    margin-bottom: 20px;
+}
+
+#section4 p, #section5 p, #section6 p {
+    margin-bottom: 20px;
+}
+
+#section3 {
+    background-color: #E8DAEF ;
+}
+
+#section4 {
+    background-color: #F9E79F;
+}
+
+#section5 {
+    background-color: pink;
+}
+
+#section6 {
+    background-color: lightgray;
+}
+
+#footer {
+    background-color: teal;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 50px;
+}
