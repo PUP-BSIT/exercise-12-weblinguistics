@@ -56,28 +56,15 @@
 			<p>You are a great person, and I hope you will reach your goals someday.</p>	
 		</div>
 
-		<div class="form">
-			<form action="">
-				<h5>Name</h5>
-				<input type="text"
-					id = "name"
-					class="name"
-					placeholder="Enter your name"
-					oninput="ontextinput()">
-				<h5>Comment</h5>
-				<textarea name="comment"
-					id="comment" cols="80"
-					rows="10"
-					placeholder="Your Comment Here"
-					oninput="ontextinput()">
-				</textarea>
-				<button id="comment-button"
-					type="button"
-					class="btn"
-					onclick="addComment()"
-					disabled="true">Comment</button>
-			</form>
-		</div>
+		<div id="comment_form">
+			<label for="name">Name:</label>
+			<input type="text" id="name" required>
+
+			<label for="comment">Comment:</label>
+			<textarea id="comment_text" required></textarea>
+
+			<button id="comment_button">Comment</button>
+	</div>
 
 		<div>
 			<h2> Gallery </h2>

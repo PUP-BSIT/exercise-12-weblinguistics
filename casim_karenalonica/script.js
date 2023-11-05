@@ -1,38 +1,22 @@
-<script>
-    let nameInput = document.getElementById("name");
-    let commentInput = document.getElementById("comment");
-    let commentButton = document.getElementById("comment-button");
-    let commentsSection = document.querySelector(".team-comment");
+document.addEventListener('DOMContentLoaded', function () {
+    const commentButton = document.getElementById('comment_button');
+    const commentText = document.getElementById('comment_text');
+    const commentsContainer = document.getElementById('comments');
 
-    nameInput.addEventListener("input", toggleCommentButton);
-    commentInput.addEventListener("input", toggleCommentButton);
-    commentButton.addEventListener("click", addComment);
+    commentButton.addEventListener('click', function () {
+        const name = document.getElementById('name').value;
+        const comment = commentText.value;
 
-    function toggleCommentButton() {
-        let nameValue = nameInput.value;
-        let commentValue = commentInput.value;
+        if (name && comment) {
+            const newComment = document.createElement('div');
+            newComment.className = 'comment_container';
+            newComment.innerHTML = `<strong>Name: ${name}
+						</strong><br>${comment}<br><br>`;
 
-        if (nameValue.trim() !== "" && commentValue.trim() !== "") {
-            commentButton.removeAttribute("disabled");
-        } else {
-            commentButton.setAttribute("disabled", "disabled");
+            commentsContainer.insertBefore(newComment, commentsContainer.firstChild);
+
+            document.getElementById('name').value = '';
+            commentText.value = '';
         }
-    }
-
-    function addComment() {
-        let name = nameInput.value;
-        let comment = commentInput.value;
-
-        if (name.trim() === '' || comment.trim() === '') {
-            return;
-        }
-
-        let commentElement = document.createElement('div');
-        commentElement.innerHTML = `<h4>${name}</h4><p>${comment}</p>`;
-        commentsSection.appendChild(commentElement);
-
-        nameInput.value = '';
-        commentInput.value = '';
-        commentButton.setAttribute('disabled', 'true');
-    }
-</script>
+    });
+});
