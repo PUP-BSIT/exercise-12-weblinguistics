@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const nameInput = document.getElementById('name');
     const commentInput = document.getElementById('comment_text');
     const addCommentButton = document.getElementById('add_comment');
-
+    
     function addComment() {
         const name = nameInput.value;
         const comment = commentInput.value;
