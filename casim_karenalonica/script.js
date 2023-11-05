@@ -1,22 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const commentButton = document.getElementById('comment_button');
-    const commentText = document.getElementById('comment_text');
-    const commentsContainer = document.getElementById('comments');
+    const commentForm = document.getElementById('comment_form');
+    const commentsList = document.getElementById('comments_list');
+    const nameInput = document.getElementById('name');
+    const commentInput = document.getElementById('comment_text');
+    const addCommentButton = document.getElementById('add_comment');
 
-    commentButton.addEventListener('click', function () {
-        const name = document.getElementById('name').value;
-        const comment = commentText.value;
+    function addComment() {
+        const name = nameInput.value;
+        const comment = commentInput.value;
 
-        if (name && comment) {
-            const newComment = document.createElement('div');
-            newComment.className = 'comment_container';
-            newComment.innerHTML = `<strong>Name: ${name}
-						</strong><br>${comment}<br><br>`;
+        if (name.trim() !== '' && comment.trim() !== '') {
+            const commentItem = document.createElement('li');
+            commentItem.innerHTML = `<strong>${name}:</strong> ${comment}`;
+            commentsList.appendChild(commentItem);
 
-            commentsContainer.insertBefore(newComment, commentsContainer.firstChild);
-
-            document.getElementById('name').value = '';
-            commentText.value = '';
+            // Clear input fields
+            nameInput.value = '';
+            commentInput.value = '';
         }
+    }
+
+    addCommentButton.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent the form from submitting
+        addComment();
     });
 });

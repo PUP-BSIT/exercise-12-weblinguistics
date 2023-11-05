@@ -1,5 +1,6 @@
 body {
   background-color: #cbc3e3; 
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -54,40 +55,41 @@ p {
   font-style: italic; /* Style testimonials */
 }
 
-#comments_list {
-  list-style-type: none; 
-  padding: 0px;
-  margin: 0px;
+#comments_list, #comment_form {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-#comments_list li {
-  font-family: Arial, sans-serif;
-  font-size: 20px;
-  margin: 0px;
+#comments_list {
+  list-style-type: none;
+  padding: 0;
+	margin: 10px;
 }
 
 #comment_form {
-  border: 5px solid #301934; 
+	border: 2px solid #301934;
   padding: 20px;
   margin: 10px;
 }
 
-label {
-  display: block;
-  font-weight: bold;
+#comment_form label, #comment_form input, #comment_form textarea, #comment_form button {
+	display: block;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	margin: 10px;
+	width: 100%;
 }
 
-input[type="text"],
-textarea {
-  width: 100%;
+#comment_form input, #comment_form textarea {
   padding: 10px;
-  margin: 5px 0;
-  border: 3px solid #702670;
+  border: 2px solid #702670;
   border-radius: 5px;
   font-family: Arial, sans-serif;
 }
 
-button {
+#comment_form button {
   background-color: #7851a9;
   color: black;
   font-weight: bold;
