@@ -56,10 +56,6 @@ body {
     font-family: 'Bahnschrift', sans-serif;
     margin-bottom: 30px;
 }
-
-#section2 p {
-    margin-bottom: 20px;
-}
 	
 #section2 h2, #section3 h2{
 	font-family: 'Bahnschrift', sans-serif;
@@ -79,7 +75,7 @@ body {
     margin-bottom: 20px;
 }
 
-#section4 p, #section5 p, #section6 p {
+#section2 p, #section4 p, #section5 p, #section6 p {
     margin-bottom: 20px;
 }
 
