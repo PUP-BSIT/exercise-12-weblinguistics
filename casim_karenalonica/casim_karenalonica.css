@@ -65,6 +65,22 @@ label {
   font-weight: bold;
 }
 
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 3px solid #702670;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+#comment_form input {
+  border: 5px solid #301934; 
+  padding: 20px;
+  margin: 10px;
+}
+
 #comment_button {
   background-color: #7851a9;
   color: black;
