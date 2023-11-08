@@ -119,7 +119,7 @@ img:hover {
 
 @media (max-width: 768px) {
 img {
-    width: 90%; /* Resize images to fit the screen width on mobile */
+    width: 50%;
     height: auto;
 }
 
