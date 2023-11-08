@@ -116,3 +116,13 @@ img {
 img:hover {
     border-color: #008000;
 }
+
+@media (max-width: 768px) {
+img {
+    width: 90%; /* Resize images to fit the screen width on mobile */
+    height: auto;
+}
+
+body {
+    font-size: 14px;
+}
